@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>مقبلات ومشروبات الرافدين — TV Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ==================== START SCREEN ==================== -->
+<div class="startScreen" id="startScreen">
+  <div class="startBox">
+    <img class="startLogo" src="images/logo-58.jpg" alt="مقبلات ومشروبات الرافدين">
+    <h1>مقبلات ومشروبات الرافدين</h1>
+    <p>شاشة قائمة الطعام</p>
+    <button class="fullscreenBtn" id="startBtn">دخول ملء الشاشة</button>
+  </div>
+</div>
+
+<!-- ==================== EXIT FULLSCREEN BUTTON ==================== -->
+<button class="exitFs" id="exitFs" title="Exit fullscreen">×</button>
+
+<!-- ==================== MAIN TV UI ==================== -->
+<main id="app">
+  <header class="top">
+    <div class="brand">
+      <img class="logoImg" src="images/logo-58.jpg" alt="مقبلات ومشروبات الرافدين">
+      <div class="brandText">
+        <strong>مقبلات ومشروبات الرافدين</strong>
+        <span>IRAQI GRILL &amp; RESTAURANT</span>
+      </div>
+    </div>
+
+    <div class="categoryWrap">
+      <div class="categoryKicker">قائمة الطعام</div>
+      <div class="category" id="categoryTitle">المقبلات الباردة</div>
+    </div>
+  </header>
+
+  <div class="stageWrap" id="stageWrap">
+    <section class="stage" id="stage"></section>
+  </div>
+
+  <div class="pageDots" id="pageDots"></div>
+
+  <div class="progressArea">
+    <div class="progressTrack"><div class="progressBar" id="progressBar"></div></div>
+    <div class="countdown"><b id="countdown">60</b> ثانية</div>
+  </div>
+</main>
+
+<div class="transition" id="transition"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
